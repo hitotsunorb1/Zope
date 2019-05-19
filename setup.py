@@ -25,6 +25,10 @@ def _read_file(filename):
     with open(os.path.join(HERE, filename)) as f:
         return f.read()
 
+def _write_file(filename):
+    with open(os.path.join(HERE, filename)) as f:
+        return f.write()
+
 
 README = _read_file('README.rst')
 CHANGES = _read_file('CHANGES.rst')
